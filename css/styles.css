@@ -1,0 +1,29 @@
+a{
+    color: darkgreen;
+    font-size: small;
+    margin: 5px;
+}
+
+section{
+ background-color: aqua;
+}
+
+article{
+background-color: chartreuse;
+margin: 5%;
+}
+.inicio{
+    background-color: chocolate;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.container__box{
+    background-color: rgb(252, 223, 202);
+    width: 60vw;
+    height: 60vh;
+    text-align: center;
+    padding: 10%;
+}
