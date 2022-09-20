@@ -5,12 +5,13 @@ a{
 }
 
 section{
-    background-color: aqua;
+    background-color: rgb(241, 241, 128);
 }
 
 article{
 background-color: chartreuse;
 margin: 5%;
+
 }
 .inicio{
     background-color: chocolate;
@@ -19,11 +20,17 @@ margin: 5%;
     text-align: center;
 
 }
+.inicio h1{
+    text-decoration:underline;
+    
+}
+
+
 
 .container__box{
-    background-color: rgb(252, 223, 202);
-    width: 60vw;
-    height: 60vh;
+    background-color: rgba(161, 83, 27, 0.644);
+    width: 80vw;
+    height: 80vh;
     text-align: center;
-    padding: 10%;
+    padding: 5%;
 }
