@@ -5,16 +5,27 @@ a{
 }
 
 section{
-    background-color: rgb(241, 241, 128);
+    background-image: radial-gradient(ellipse at top orange, yellow);
 }
 
 article{
-background-color: chartreuse;
+background-image: linear-gradient(to bottom,orange , tomato);
 margin: 5%;
 
 }
+/*estilo playlist*/
+.music h3{
+    background-color:(brown);
+}
+
+body{
+    background-image: url(../assets/img/día.jpg);
+    background-attachment: fixed;
+}
+
+
 .inicio{
-    background-color: chocolate;
+    background-image:url(../assets/img/día.jpg) ;
     width: 100vw;
     height: 100vh;
     text-align: center;
@@ -25,12 +36,16 @@ margin: 5%;
     
 }
 
-
+.container__box img{
+    width: 50vw;
+}
 
 .container__box{
-    background-color: rgba(161, 83, 27, 0.644);
+    margin: 1rem;
+    display: inline-block;
+    
     width: 80vw;
     height: 80vh;
     text-align: center;
-    padding: 5%;
+    
 }
