@@ -1,58 +1,65 @@
-a{
+a {
     color: black;
     margin: 5px;
     padding: 5px;
 }
-body header nav a{
-    
+
+body header nav a {
+
     background-color: blanchedalmond;
     padding: 5px;
     border-radius: 50px;
     box-shadow: 2px 2px 5px;
 }
 
-section{
+section {
     background-image: radial-gradient(ellipse at top orange, yellow);
 }
 
-article{
-background-image: linear-gradient(to bottom,orange , tomato);
-margin: 5%;
+article {
+    background-image: linear-gradient(to bottom, orange, tomato);
+    margin: 5%;
 
 }
+
 /*estilo playlist*/
-.music h3{
-    background-color:(brown);
+.music h3 {
+    background-color: (brown);
 }
 
-body{
+body {
     background-image: url(../assets/img/día.jpg);
     background-attachment: fixed;
 }
-.tablero{
+
+.tablero {
     column-gap: 5px;
 }
-.tablero a{
+
+.tablero a {
     text-decoration: none;
 
 }
 
 
-.inicio{
-    background-image:url(../assets/img/moment.jpg) ;
+.inicio {
+    background-image: url(../assets/img/moment.jpg);
     width: 100vw;
     height: 100vh;
     text-align: center;
     background-repeat: no-repeat;
 }
-.inicio h1{
-    text-decoration:underline;
+
+.inicio h1 {
+    text-decoration: underline;
     text-align: center;
 }
-.inicio h2{
+
+.inicio h2 {
     text-align: center;
 }
-.event{
+
+.event {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -60,25 +67,35 @@ body{
 }
 
 
-.container__box img{
+.container__box img {
     width: 50vw;
 }
 
-.container__box{
+.container__box {
     margin: 1rem;
     display: inline-block;
     width: 80vw;
-    text-align:center;
-    column-gap: 5px ;
+    text-align: center;
+    column-gap: 5px;
 }
-.footer{
-    display: flex;
+
+.footer-flex {
+    /* width: 500px; */
+    flex-direction: column;
+    margin-top: 10px;
+    background: #999;
+    opacity: 0.8;
+    text-align: center;
+}
+
+
+/*    display: flex;
     flex-direction: column;
     align-items: center;
     background-image: radial-gradient(ellipse at top orange, yellow);
     padding: 10px;
-    margin-top: 10px;
-}
+    margin-top: 10px;*/
+
 
 
 /* estilo animación*/
