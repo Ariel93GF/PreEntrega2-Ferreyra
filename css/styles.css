@@ -1,8 +1,13 @@
+@charset "UTF-8";
+body {
+  background-image: url(../assets/img/día.jpg);
+  background-attachment: fixed; }
+
 .padre {
   display: grid;
   grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
   /* estilos del header */ }
   .padre header {
     grid-area: header;
@@ -15,4 +20,49 @@
 
 /*estilos del main */
 main {
-  grid-area: main; }
+  grid-area: main;
+  display: grid;
+  grid-template-areas: "h1 h1 h2 h2" "img img fade-in-image fade-in-image " "h3 h3 h3 h3";
+  justify-content: end;
+  justify-items: center;
+  align-items: center; }
+  main h1 {
+    grid-area: h1;
+    align-self: end;
+    font-size: 4rem;
+    text-align: center; }
+  main h2 {
+    grid-area: h2;
+    align-items: end;
+    font-size: 2rem;
+    display: block;
+    text-align: center; }
+  main h3 {
+    grid-area: h3;
+    font-size: 2rem;
+    margin-top: 10px;
+    background: #868585;
+    opacity: 0.8;
+    display: block;
+    text-align: center; }
+  main .container__box {
+    grid-area: img; }
+    main .container__box img {
+      width: 70%; }
+    main .container__box .fade-in-image {
+      text-align: center;
+      animation: fadeIn 5s;
+      -webkit-animation: fadeIn 5s;
+      -moz-animation: fadeIn 5s;
+      -o-animation: fadeIn 5s;
+      -ms-animation: fadeIn 5s; }
+
+/*estilos del footer */
+.footer-flex {
+  grid-area: footer;
+  flex-direction: column;
+  margin-top: 10px;
+  background: #999;
+  opacity: 0.8;
+  text-align: center;
+  font-size: medium; }
