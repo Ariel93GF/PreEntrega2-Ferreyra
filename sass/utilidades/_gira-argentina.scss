@@ -1,27 +1,25 @@
 /* Gira Argentina */
 .padre1{
     display: grid;
-    grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    grid-template-rows: 0,1fr 1fr 1fr 0,1fr;
     grid-template-columns: repeat(2, 1fr, 1fr, 1fr) ;
     grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
 
     /* estilos del header */    
     header{
         .tablero{
-            grid-area: header;
+            grid-area: tablero;
             display: flex;
-            align-items:baseline;
-            justify-content:last baseline;
+            text-align:end;
+            justify-content:space-around;
                 display: flex;
-                list-style: none;
                 color: ($colores 4);
                 a{
                 grid-area: a;
                 text-decoration: none;
-                text-align: baseline;
                 }
             }
         }
