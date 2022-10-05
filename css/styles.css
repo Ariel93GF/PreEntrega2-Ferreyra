@@ -1,23 +1,23 @@
 @charset "UTF-8";
-body {
-  background-image: url(../assets/img/día.jpg);
-  background-attachment: fixed; }
-
 /* Gira Argentina */
 .padre1 {
   display: grid;
   grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer";
   /* estilos del header */ }
-  .padre1 header {
+  .padre1 header .tablero {
     grid-area: header;
     display: flex;
-    align-items: center;
-    justify-content: center; }
-    .padre1 header nav .tablero {
-      display: flex;
-      list-style: none; }
+    align-items: baseline;
+    justify-content: last baseline;
+    display: flex;
+    list-style: none;
+    color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black 4; }
+    .padre1 header .tablero a {
+      grid-area: a;
+      text-decoration: none;
+      text-align: baseline; }
 
 /*estilos del main */
 main {
@@ -49,7 +49,7 @@ main {
   main .container__box {
     grid-area: img; }
     main .container__box img {
-      width: 70%; }
+      width: 90%; }
     main .container__box .fade-in-image {
       text-align: center;
       animation: fadeIn 5s;
@@ -62,7 +62,7 @@ main {
 .footer-flex {
   grid-area: footer;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 5fr;
   background: #999;
   opacity: 0.8;
   text-align: center;
@@ -72,25 +72,29 @@ main {
 .padre2 {
   display: grid;
   grid-template-rows: 0.5fr;
-  grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
-  grid-template-areas: "header header" "main main main" "footer footer footer footer";
+  grid-template-columns: repeat();
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
   /*estilos del header*/ }
   .padre2 header {
     grid-area: header;
     display: block;
     top: 7rem;
     bottom: 5;
-    color: linear-gradient(to left, orange, tomato);
+    color: orange;
     width: 100%;
     left: 1rem;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     clip-path: circle(0 at static); }
     .padre2 header a {
       grid-area: a;
       text-decoration: none; }
+
+body {
+  background-image: url(../assets/img/día.jpg);
+  background-attachment: fixed; }
 
 .container-not {
   display: grid;
