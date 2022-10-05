@@ -1,5 +1,10 @@
 /* Noticias*/
 .container.not{
-    
-
+    display: grid;
+    grid-template-rows: 0.5fr;
+    grid-template-columns: repeat() ;
+    grid-template-areas:
+    "container-not container-not header header"
+    "main main main main"
+    "footer footer footer";
 }
