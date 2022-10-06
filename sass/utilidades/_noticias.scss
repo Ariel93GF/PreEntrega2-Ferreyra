@@ -1,10 +1,62 @@
 /* Noticias*/
 .container.not{
+    padding: 3rem;
     display: grid;
-    grid-template-rows: 0.5fr;
-    grid-template-columns: repeat() ;
+    grid-template-rows: 0.5fr 1fr 2fr 0.5fr ;
+    grid-template-columns: repeat(2, 2fr, 1, 2);
     grid-template-areas:
-    "container-not container-not header header"
-    "main main main main"
-    "footer footer footer";
+        "header header header header"
+        "main main inicio inicio"
+        "footer footer footer footer";
+    header{
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        nav{
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    margin: 3rem;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    a{
+                        color: ($colores 5);
+                        padding: 3rem;
+                    }
+                }
+            }
+        }
+    }
+} 
+.title-not{
+    h1{
+        grid-area: h1;
+        text-align: center;
+    }
+}
+.main-not{
+    grid-area: main-not;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    h2{
+        grid-area: h2;
+                align-self: end;
+                font-size: 3rem;
+                text-align: center;
+    }
+    section{
+        background-color: ($colores, 2);
+        padding: 1.3rem;
+        width: 300px;
+        box-shadow: 1px 1px rgb(198, 198, 198);
+        article{
+            h3{
+                grid-area: h3;
+                text-align: center;
+            }
+        }
+    }    
 }

@@ -1,3 +1,4 @@
+@import "variables";
 /* Gira Argentina */
 .padre1{
     display: grid;
@@ -16,10 +17,10 @@
             text-align:end;
             justify-content:space-around;
                 display: flex;
-                color: ($colores 4);
                 a{
                 grid-area: a;
                 text-decoration: none;
+                color: ($colores 4);
                 }
             }
         }
@@ -52,7 +53,7 @@
         grid-area: h3;
         font-size: 2rem;
         margin-top: 10px;
-        background: rgb(134, 133, 133);
+        background: #999;
         opacity: 0.8;
         display: block;
         text-align: center;
@@ -81,4 +82,11 @@
     opacity: 0.8;
     text-align: center;
     font-size: medium;
+    main{
+        h5{
+            grid-area: h5;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 }
