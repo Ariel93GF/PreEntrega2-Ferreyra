@@ -2,11 +2,15 @@
 /*imports*/
 body {
   background-image: url(../assets/img/día.jpg);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 844px;
+  width: 100%; }
 
 body {
   background-image: url(../assets/img/día.jpg);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 844px;
+  width: 100%; }
 
 /* Gira Argentina */
 .padre1 {
@@ -174,12 +178,15 @@ main {
   justify-content: end;
   justify-items: center;
   align-items: center; }
-  main .inicio h1 {
-    grid-area: h1;
-    display: flex;
+  main .inicio {
+    grid-area: inicio;
+    display: block;
     align-self: end;
-    font-size: 3rem;
+    font: 3rem;
     text-align: center; }
+    main .inicio h1 {
+      grid-area: h1;
+      text-align: center; }
   main .container__box section h2 {
     grid-area: h2;
     align-self: end;
@@ -195,4 +202,4 @@ footer {
     align-self: end;
     font-size: 3rem;
     text-align: center;
-    background-color: aliceblue; }
+    background-color: #ff8800; }

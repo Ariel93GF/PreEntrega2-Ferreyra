@@ -38,11 +38,13 @@ main{
     justify-items: center;
     align-items: center;
     .inicio{
+        grid-area: inicio;
+        display: block;
+        align-self: end;
+        font: 3rem;
+        text-align: center;
         h1{
             grid-area: h1;
-            display: flex;
-            align-self: end;
-            font-size: 3rem;
             text-align: center;
         }
     }
@@ -67,7 +69,7 @@ footer{
         align-self: end;
         font-size: 3rem;
         text-align: center;
-        background-color:aliceblue;
+        background-color: rgb(255, 136, 0)
     }
     
 }
