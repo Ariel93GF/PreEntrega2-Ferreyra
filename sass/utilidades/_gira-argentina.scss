@@ -11,19 +11,24 @@
 
     /* estilos del header */    
     header{
-        .tablero{
-            grid-area: tablero;
+            grid-area: header;
             display: flex;
             text-align:end;
-            justify-content:space-around;
-                display: flex;
-                a{
-                grid-area: a;
-                text-decoration: none;
-                color: ($colores 4);
+            justify-content:center;
+            nav{
+                ul{
+                    display: flex;
+                    list-style: none;
+                    li{
+                        margin: 0.5rem;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        a{
+                            color: ($colores 4);
+                        }
+                    }
                 }
             }
-        }
     }
 /*estilos del main */
     main{
@@ -73,6 +78,12 @@
         }
     }
 }
+.imag{
+    animation-name: mianimación;
+    animation-duration: 4s;
+}
+@keyframes mianimación {
+}
 /*estilos del footer */
 .footer-flex{
     grid-area: footer;
@@ -89,4 +100,5 @@
             text-align: center;
         }
     }
+}
 }
