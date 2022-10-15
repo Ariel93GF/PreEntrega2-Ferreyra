@@ -2,15 +2,11 @@
 /*imports*/
 body {
   background-image: url(../assets/img/día.jpg);
-  background-attachment: fixed;
-  height: 844px;
-  width: 100%; }
+  background-attachment: fixed; }
 
 body {
   background-image: url(../assets/img/día.jpg);
-  background-attachment: fixed;
-  height: 844px;
-  width: 100%; }
+  background-attachment: fixed; }
 
 /* Gira Argentina */
 .padre1 {
@@ -112,50 +108,46 @@ body {
       text-decoration: none; }
 
 /* Noticias*/
-.container.not {
-  padding: 3rem;
+.container-not {
   display: grid;
-  grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
-  grid-template-columns: repeat(2, 2fr, 1, 2);
-  grid-template-areas: "header header header header" "main main inicio inicio" "footer footer footer footer"; }
-  .container.not header {
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  .container-not header {
     grid-area: header;
     display: flex;
     align-items: center;
     justify-content: center; }
-    .container.not header nav ul {
+    .container-not header nav ul {
       display: flex;
       list-style: none; }
-      .container.not header nav ul li {
-        margin: 3rem;
+      .container-not header nav ul li {
+        margin: 0.5rem;
         font-weight: bold;
         font-size: 1.2rem; }
-        .container.not header nav ul li a {
-          color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black 5;
-          padding: 3rem; }
-
-.title-not h1 {
-  grid-area: h1;
-  text-align: center; }
-
-.main-not {
-  grid-area: main-not;
-  display: flex;
-  column-gap: 1rem;
-  justify-content: center; }
-  .main-not h2 {
-    grid-area: h2;
-    align-self: end;
-    font-size: 3rem;
+        .container-not header nav ul li a {
+          color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black 2; }
+  .container-not .title-not h1 {
+    grid-area: h1;
     text-align: center; }
-  .main-not section {
-    background-color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black, 2;
-    padding: 1.3rem;
-    width: 300px;
-    box-shadow: 1px 1px #c6c6c6; }
-    .main-not section article h3 {
-      grid-area: h3;
+  .container-not .main-not {
+    grid-area: main-not;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center; }
+    .container-not .main-not h2 {
+      grid-area: h2;
+      align-self: end;
+      font-size: 3rem;
       text-align: center; }
+    .container-not .main-not section {
+      background-color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black, 2;
+      padding: 1.3rem;
+      width: 300px;
+      box-shadow: 1px 1px #c6c6c6; }
+      .container-not .main-not section article h3 {
+        grid-area: h3;
+        text-align: center; }
 
 .padre3 {
   display: grid;
