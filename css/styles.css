@@ -4,10 +4,6 @@ body {
   background-image: url(../assets/img/día.jpg);
   background-attachment: fixed; }
 
-body {
-  background-image: url(../assets/img/día.jpg);
-  background-attachment: fixed; }
-
 /* Gira Argentina */
 .padre1 {
   display: grid;
@@ -112,42 +108,56 @@ body {
   display: grid;
   grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
   grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
-  .container-not header {
+  grid-template-areas: "header header header header" "main-not main-not main main" "footer footer footer footer"; }
+  .container-not .container-not header {
     grid-area: header;
     display: flex;
     align-items: center;
     justify-content: center; }
-    .container-not header nav ul {
+    .container-not .container-not header nav ul {
       display: flex;
       list-style: none; }
-      .container-not header nav ul li {
+      .container-not .container-not header nav ul li {
+        list-style: none;
         margin: 0.5rem;
         font-weight: bold;
         font-size: 1.2rem; }
-        .container-not header nav ul li a {
+        .container-not .container-not header nav ul li a {
           color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black 2; }
-  .container-not .title-not h1 {
-    grid-area: h1;
-    text-align: center; }
-  .container-not .main-not {
+  .container-not .container-not .title-not {
+    grid-area: title-not; }
+    .container-not .container-not .title-not h1 {
+      grid-area: h1;
+      text-align: center; }
+  .container-not .container-not .main-not {
     grid-area: main-not;
     display: flex;
     column-gap: 1rem;
     justify-content: center; }
-    .container-not .main-not h2 {
+    .container-not .container-not .main-not h2 {
       grid-area: h2;
       align-self: end;
       font-size: 3rem;
       text-align: center; }
-    .container-not .main-not section {
+    .container-not .container-not .main-not section {
       background-color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black, 2;
       padding: 1.3rem;
       width: 300px;
       box-shadow: 1px 1px #c6c6c6; }
-      .container-not .main-not section article h3 {
+      .container-not .container-not .main-not section article h3 {
         grid-area: h3;
         text-align: center; }
+  .container-not .footer-not {
+    grid-area: footer;
+    flex-direction: column;
+    margin-top: 5fr;
+    background: #999;
+    opacity: 0.8;
+    text-align: center;
+    font-size: medium; }
+    .container-not .footer-not h6 {
+      flex-direction: column;
+      text-align: center; }
 
 .padre3 {
   display: grid;
