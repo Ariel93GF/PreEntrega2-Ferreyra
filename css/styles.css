@@ -26,7 +26,7 @@ body {
         font-weight: bold;
         font-size: 1.2rem; }
         .padre1 header nav ul li a {
-          color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black 4; }
+          color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, blue, black 4; }
   .padre1 main {
     grid-area: main;
     display: grid;
@@ -49,7 +49,7 @@ body {
       grid-area: h3;
       font-size: 2rem;
       margin-top: 10px;
-      background: #999;
+      background: orange;
       opacity: 0.8;
       display: block;
       text-align: center; }
@@ -72,7 +72,7 @@ body {
     grid-area: footer;
     flex-direction: column;
     margin-top: 5fr;
-    background: #999;
+    background: orange;
     opacity: 0.8;
     text-align: center;
     font-size: medium; }
@@ -84,70 +84,27 @@ body {
 /* Imagenes */
 .padre2 {
   display: grid;
-  grid-template-rows: 0.5fr;
-  grid-template-columns: repeat();
+  grid-template-rows: 0.1fr 1fr 1fr 0,1fr;
+  grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
   grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
   /*estilos del header*/ }
   .padre2 header {
     grid-area: header;
-    display: block;
-    top: 7rem;
-    bottom: 5;
-    width: 100%;
-    left: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    clip-path: circle(0 at static); }
-    .padre2 header a {
-      grid-area: a;
-      text-decoration: none; }
-
-/* Noticias*/
-.container-not {
-  display: grid;
-  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
-  grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
-  grid-template-areas: "header header header header" "main-not main-not main main" "footer footer footer footer"; }
-  .container-not .container-not header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
+    text-align: end;
     justify-content: center; }
-    .container-not .container-not header nav ul {
+    .padre2 header nav ul {
       display: flex;
       list-style: none; }
-      .container-not .container-not header nav ul li {
-        list-style: none;
+      .padre2 header nav ul li {
         margin: 0.5rem;
         font-weight: bold;
         font-size: 1.2rem; }
-        .container-not .container-not header nav ul li a {
-          color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black 2; }
-  .container-not .container-not .title-not {
-    grid-area: title-not; }
-    .container-not .container-not .title-not h1 {
-      grid-area: h1;
-      text-align: center; }
-  .container-not .container-not .main-not {
-    grid-area: main-not;
-    display: flex;
-    column-gap: 1rem;
-    justify-content: center; }
-    .container-not .container-not .main-not h2 {
-      grid-area: h2;
-      align-self: end;
-      font-size: 3rem;
-      text-align: center; }
-    .container-not .container-not .main-not section {
-      background-color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black, 2;
-      padding: 1.3rem;
-      width: 300px;
-      box-shadow: 1px 1px #c6c6c6; }
-      .container-not .container-not .main-not section article h3 {
-        grid-area: h3;
-        text-align: center; }
-  .container-not .footer-not {
+        .padre2 header nav ul li a {
+          color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, blue, black 4; }
+  .padre2 h1 .text-center {
+    text-align: center; }
+  .padre2 .footer-flex {
     grid-area: footer;
     flex-direction: column;
     margin-top: 5fr;
@@ -155,13 +112,106 @@ body {
     opacity: 0.8;
     text-align: center;
     font-size: medium; }
-    .container-not .footer-not h6 {
-      flex-direction: column;
+
+/* Noticias*/
+.container-not {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
+  grid-template-areas: "header header header header" "main-not main-not main main" "footer footer footer footer"; }
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  header nav ul {
+    display: flex; }
+    header nav ul li {
+      grid-area: li;
+      list-style: none;
+      margin: 0.5rem;
+      font-weight: bold;
+      font-size: 1.2rem; }
+      header nav ul li a {
+        grid-area: a;
+        color: orange;
+        background-color: linear-gradient(to left, orange, tomato); }
+
+.title-not {
+  grid-area: title-not;
+  justify-content: flex-start; }
+  .title-not h1 {
+    grid-area: h1;
+    text-align: center;
+    justify-content: center; }
+
+.main-not {
+  grid-area: main-not;
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center; }
+  .main-not h2 {
+    grid-area: h2;
+    align-self: end;
+    font-size: 3rem;
+    text-align: center; }
+  .main-not section {
+    background-color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, blue, black, 2;
+    padding: 1.3rem;
+    width: 300px;
+    box-shadow: 1px 1px #c6c6c6; }
+    .main-not section article h3 {
+      grid-area: h3;
       text-align: center; }
+
+.footer-not {
+  grid-area: footer;
+  flex-direction: column;
+  margin-top: 5fr;
+  background: #999;
+  opacity: 0.8;
+  text-align: center;
+  font-size: medium; }
+  .footer-not h6 {
+    flex-direction: column;
+    text-align: center; }
+
+body {
+  display: grid;
+  grid-template-rows: 0, 1fr 1fr 1fr 0, 1fr;
+  grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  /* estilos del header */ }
+  body header {
+    grid-area: header;
+    display: flex;
+    text-align: end;
+    justify-content: center; }
+    body header nav ul {
+      display: flex;
+      list-style: none; }
+      body header nav ul li {
+        margin: 0.5rem;
+        font-weight: bold;
+        font-size: 1.2rem; }
+        body header nav ul li a {
+          color: blue;
+          text-decoration: none; }
+
+/*Estilos del main*/
+footer {
+  grid-area: footer;
+  flex-direction: column;
+  margin-top: 5fr;
+  background: orange;
+  opacity: 0.8;
+  text-align: center;
+  font-size: medium; }
 
 .padre3 {
   display: grid;
-  grid-template-rows: 0,1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0, 1fr 1fr 1fr 0.1fr;
   grid-template-columns: repeat(2, 1fr, 1fr, 1fr);
   grid-template-areas: "header header header header" "main main inicio inicio" "footer footer footer footer"; }
   .padre3 header {
@@ -177,37 +227,43 @@ body {
         font-weight: bold;
         font-size: 1.2rem; }
         .padre3 header nav ul li a {
-          color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, black 4; }
-
-main {
-  grid-area: main;
-  display: grid;
-  grid-template-areas: "inicio inicio h1 h1" "h2 h2 h2 h2" "h3 h3 h3 h3";
-  justify-content: end;
-  justify-items: center;
-  align-items: center; }
-  main .inicio {
-    grid-area: inicio;
-    display: block;
-    align-self: end;
-    font: 3rem;
-    text-align: center; }
-    main .inicio h1 {
-      grid-area: h1;
+          color: linear-gradient(to left, orange, tomato), radial-gradient(ellipse at top orange, yellow), brown, orange, blue, black 4; }
+  .padre3 main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "inicio inicio h1 h1" "h2 h2 h2 h2" "h3 h3 h3 h3";
+    justify-content: end;
+    justify-items: center;
+    align-items: center; }
+    .padre3 main .inicio {
+      grid-area: inicio;
+      display: block;
+      align-self: end;
+      font: 3rem;
       text-align: center; }
-  main .container__box section h2 {
-    grid-area: h2;
-    align-self: end;
-    font-size: 3rem;
-    text-align: center; }
-
-footer {
-  grid-area: footer;
-  align-items: end;
-  justify-content: center; }
-  footer h4 {
-    grid-area: h4;
-    align-self: end;
-    font-size: 3rem;
-    text-align: center;
-    background-color: #ff8800; }
+      .padre3 main .inicio h1 {
+        grid-area: h1;
+        text-align: center; }
+    .padre3 main .container__box section h2 {
+      grid-area: h2;
+      align-self: end;
+      font-size: 3rem;
+      text-align: center; }
+      .padre3 main .container__box section h2 article {
+        grid-area: article; }
+        .padre3 main .container__box section h2 article h3 {
+          grid-area: h3;
+          text-align: center;
+          background-color: blue;
+          opacity: 0.8; }
+  .padre3 footer {
+    grid-area: footer;
+    align-items: end;
+    justify-content: center; }
+    .padre3 footer h4 {
+      grid-area: h4;
+      align-self: end;
+      font-size: 3rem;
+      text-align: center;
+      opacity: 0.8;
+      background-color: #ff8800; }

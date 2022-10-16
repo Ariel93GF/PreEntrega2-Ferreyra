@@ -1,8 +1,8 @@
 /* Imagenes */
 .padre2{
     display: grid;
-    grid-template-rows: 0.5fr;
-    grid-template-columns: repeat() ;
+    grid-template-rows: 0.1fr 1fr 1fr 0,1fr;
+    grid-template-columns:repeat(2, 1fr, 1fr, 1fr) ;
     grid-template-areas:
     "header header header header"
     "main main main main"
@@ -10,18 +10,36 @@
     /*estilos del header*/
     header{
         grid-area: header;
-        display: block;
-        top: 7rem;
-        bottom: 5;
-        width: 100%;
-        left: 1rem;
         display: flex;
-        flex-direction: column;
-        align-items:center;
-        clip-path: circle(0 at static );
-        a{
-            grid-area: a;
-            text-decoration: none;
-        }
+        text-align:end;
+        justify-content:center;
+        nav{
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    margin: 0.5rem;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    a{
+                        color: ($colores 4);
+                    }
+                }
+            }
         }
     }
+    h1{
+        .text-center{
+            text-align: center;
+        }
+    }
+    .footer-flex{
+        grid-area: footer;
+        flex-direction: column;
+        margin-top: 5fr;
+        background: #999;
+        opacity: 0.8;
+        text-align: center;
+        font-size: medium;
+        }
+}
