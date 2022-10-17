@@ -2,7 +2,8 @@ $fondo-principal: url(../assets/img/día.jpg);
 $posicion-fija: fixed;
 
 body{
-    background-image: $fondo-principal;
+    background-color: beige;
+    // background-image: $fondo-principal;
     background-attachment: $posicion-fija;
 
 }

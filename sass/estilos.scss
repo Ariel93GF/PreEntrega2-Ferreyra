@@ -1,8 +1,11 @@
 /*imports*/
 @import "utilidades/variables";
 @import "utilidades/listas";
-@import "utilidades/gira-argentina.scss";
-@import "utilidades/imagenes";
-@import "utilidades/noticias";
-@import "utilidades/playlist.html";
-@import "utilidades/tuseventos";
+@import "pages/gira-argentina";
+@import "pages/gira-argentina";
+@import "pages/imagenes";
+@import "pages/noticias";
+@import "pages/playlist";
+@import "pages/tuseventos";
+@import "layouts/footer";
+@import "layouts/header";

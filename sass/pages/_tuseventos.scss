@@ -63,8 +63,10 @@
                     align-self: end;
                     font-size: 3rem;
                     text-align: center;
-        article{
+
+                    article {
                         grid-area: article;
+
                         h3 {
                             grid-area: h3;
                             text-align: center;
@@ -77,18 +79,18 @@
         }
     }
 
-        footer {
-            grid-area: footer;
-            align-items: end;
-            justify-content: center;
+    footer {
+        grid-area: footer;
+        align-items: end;
+        justify-content: center;
 
-            h4 {
-                grid-area: h4;
-                align-self: end;
-                font-size: 3rem;
-                text-align: center;
-                opacity: 0.8;
-                background-color: rgb(255, 136, 0)
-                }
-            }
+        h4 {
+            grid-area: h4;
+            align-self: end;
+            font-size: 3rem;
+            text-align: center;
+            opacity: 0.8;
+            background-color: rgb(255, 136, 0)
         }
+    }
+}
