@@ -1,12 +1,5 @@
 /* Imagenes */
 .padre2{
-    display: grid;
-    grid-template-rows: 0.1fr 1fr 1fr 0,1fr;
-    grid-template-columns:repeat(2, 1fr, 1fr, 1fr) ;
-    grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
     /*estilos del header*/
     header{
         grid-area: header;
@@ -28,18 +21,4 @@
             }
         }
     }
-    h1{
-        .text-center{
-            text-align: center;
-        }
-    }
-    .footer-flex{
-        grid-area: footer;
-        flex-direction: column;
-        margin-top: 5fr;
-        background: #999;
-        opacity: 0.8;
-        text-align: center;
-        font-size: medium;
-        }
 }
