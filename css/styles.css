@@ -118,13 +118,28 @@ body {
   justify-content: center;
   text-align: center;
   border: 3px solid black;
-  background-image: url(/assets/img/gentereci.jpg);
+  background-image: url(/assets/img/ci-yellow.jpg);
   opacity: 85%; }
   .card__noticia3 h4 {
     text-decoration-color: brown; }
   .card__noticia3 img {
     margin: 3%; }
   .card__noticia3:hover {
+    transform: scale(1.1); }
+
+.card__noticia4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid black;
+  background-image: url(/assets/img/telon.png);
+  opacity: 85%; }
+  .card__noticia4 h4 {
+    text-decoration-color: brown; }
+  .card__noticia4 img {
+    margin: 3%; }
+  .card__noticia4:hover {
     transform: scale(1.1); }
 
 main .title-play {
