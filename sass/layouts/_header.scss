@@ -2,7 +2,7 @@
 .header__flex {
     display: flex;
     justify-content: space-between;
-    background-color: orange;
+    background-color: nth($colores, 6 );
 
     @media screen and (max-width: 720) {
         flex-direction: column;
@@ -30,17 +30,19 @@
         }
 
         li {
-            color: white;
             font-size: larger;
             font-weight: bold;
 
             a {
-                color: rgb(255, 255, 255);
-                font-size: larger;
-                font-weight: bold;
+                display: block;
+                color: nth($colores, 9  );
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 25px;
+                letter-spacing: 0.2rem;
 
                 &:hover {
-                    color: rgb(243, 228, 13);
+                    color: nth($colores, 4 );
                     text-decoration: none;
                 }
 

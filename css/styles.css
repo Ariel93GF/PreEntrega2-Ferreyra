@@ -13,17 +13,13 @@ body {
     display: flex;
     text-align: center;
     justify-content: center; }
-  .inincio .container__box {
-    grid-area: img; }
-    .inincio .container__box img {
-      width: 90%; }
-    .inincio .container__box .fade-in-image {
-      text-align: center;
-      animation: fadeIn 5s;
-      -webkit-animation: fadeIn 5s;
-      -moz-animation: fadeIn 5s;
-      -o-animation: fadeIn 5s;
-      -ms-animation: fadeIn 5s; }
+  .inincio .container__box .fade-in-image img {
+    text-align: center;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s; }
 
 /* Gira Argentina */
 .inincio {
@@ -35,17 +31,13 @@ body {
     display: flex;
     text-align: center;
     justify-content: center; }
-  .inincio .container__box {
-    grid-area: img; }
-    .inincio .container__box img {
-      width: 90%; }
-    .inincio .container__box .fade-in-image {
-      text-align: center;
-      animation: fadeIn 5s;
-      -webkit-animation: fadeIn 5s;
-      -moz-animation: fadeIn 5s;
-      -o-animation: fadeIn 5s;
-      -ms-animation: fadeIn 5s; }
+  .inincio .container__box .fade-in-image img {
+    text-align: center;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s; }
 
 /* Imagenes */
 .padre2 {
@@ -207,7 +199,7 @@ header {
 .header__flex {
   display: flex;
   justify-content: space-between;
-  background-color: orange; }
+  background-color: black; }
   @media screen and (max-width: 720) {
     .header__flex {
       flex-direction: column;
@@ -229,13 +221,15 @@ header {
         flex-direction: column;
         align-items: center; } }
     .nav__flex ul li {
-      color: white;
       font-size: larger;
       font-weight: bold; }
       .nav__flex ul li a {
-        color: white;
-        font-size: larger;
-        font-weight: bold; }
+        display: block;
+        color: #fffaf2;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 0.2rem; }
         .nav__flex ul li a:hover {
-          color: #f3e40d;
+          color: orange;
           text-decoration: none; }
