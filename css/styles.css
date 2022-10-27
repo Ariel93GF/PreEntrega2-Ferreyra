@@ -1,7 +1,9 @@
+@charset "UTF-8";
 /*imports*/
 body {
-  background-color: beige;
-  background-attachment: fixed; }
+  background-image: url(../assets/img/día.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%; }
 
 /* Gira Argentina */
 .inincio {
@@ -55,7 +57,7 @@ body {
         font-weight: bold;
         font-size: 1.2rem; }
         .padre2 header nav ul li a {
-          color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), brown, orange, blue, black, plum, #00721c, #fffaf2 4; }
+          color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), #ce2828, orange, blue, black, plum, #00721c, #fffaf2 4; }
 
 /* Noticias*/
 .container-not {
@@ -113,7 +115,7 @@ body {
   background-image: url(/assets/img/ci-yellow.jpg);
   opacity: 85%; }
   .card__noticia3 h4 {
-    text-decoration-color: brown; }
+    text-decoration-color: #ce2828; }
   .card__noticia3 img {
     margin: 3%; }
   .card__noticia3:hover {
@@ -128,7 +130,7 @@ body {
   background-image: url(/assets/img/telon.png);
   opacity: 85%; }
   .card__noticia4 h4 {
-    text-decoration-color: brown; }
+    text-decoration-color: #ce2828; }
   .card__noticia4 img {
     margin: 3%; }
   .card__noticia4:hover {
@@ -154,7 +156,7 @@ header {
       font-weight: bold;
       font-size: 1.2rem; }
       header nav ul li a {
-        color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), brown, orange, blue, black, plum, #00721c, #fffaf2 4; }
+        color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), #ce2828, orange, blue, black, plum, #00721c, #fffaf2 4; }
 
 .inicio {
   display: block;
@@ -231,5 +233,5 @@ header {
         font-size: 25px;
         letter-spacing: 0.2rem; }
         .nav__flex ul li a:hover {
-          color: orange;
+          color: #ce2828;
           text-decoration: none; }

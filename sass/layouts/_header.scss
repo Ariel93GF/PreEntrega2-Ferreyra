@@ -42,16 +42,9 @@
                 letter-spacing: 0.2rem;
 
                 &:hover {
-                    color: nth($colores, 4 );
+                    color: nth($colores, 3 );
                     text-decoration: none;
                 }
-
-                // @media screen and (380px ) {
-                //     color: rgb(255, 255, 255);
-                //     font-size: 1.5rem;
-                //     font-weight: bold;
-                // }
-
             }
         }
     }
