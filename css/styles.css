@@ -1,9 +1,9 @@
-@charset "UTF-8";
 /*imports*/
 body {
-  background-image: url(../assets/img/día.jpg);
-  background-attachment: fixed;
-  background-size: 100% 100%; }
+  background-color: #D6EAF8;
+  /*background-image: $fondo-principal;
+    background-attachment: $posicion-fija;
+    background-size: 100% 100%;*/ }
 
 /* Gira Argentina */
 .inincio {
@@ -57,7 +57,7 @@ body {
         font-weight: bold;
         font-size: 1.2rem; }
         .padre2 header nav ul li a {
-          color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), #ce2828, orange, blue, black, plum, #00721c, #fffaf2 4; }
+          color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), #ce2828, orange, blue, black, #EDBB99, #00721c, #fffaf2 4; }
 
 /* Noticias*/
 .container-not {
@@ -156,7 +156,7 @@ header {
       font-weight: bold;
       font-size: 1.2rem; }
       header nav ul li a {
-        color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), #ce2828, orange, blue, black, plum, #00721c, #fffaf2 4; }
+        color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), #ce2828, orange, blue, black, #EDBB99, #00721c, #fffaf2 4; }
 
 .inicio {
   display: block;
@@ -180,7 +180,7 @@ header {
   display: flex;
   flex-direction: column;
   background: radial-gradient(orange, red);
-  opacity: 0.8;
+  opacity: 0.9;
   justify-content: center;
   text-align: center;
   font-size: medium;
