@@ -11,13 +11,17 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center; }
-  .inincio div img {
+  .inincio .logo {
     display: flex;
-    justify-content: center; }
-  .inincio div h1 {
-    display: flex;
-    text-align: center;
-    justify-content: center; }
+    justify-content: center;
+    max-width: 1rem; }
+    .inincio .logo img {
+      display: flex;
+      justify-content: center; }
+    .inincio .logo h1 {
+      display: flex;
+      text-align: center;
+      justify-content: center; }
   .inincio .container__box .fade-in-image img {
     text-align: center;
     animation: fadeIn 5s;
@@ -32,13 +36,17 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center; }
-  .inincio div img {
+  .inincio .logo {
     display: flex;
-    justify-content: center; }
-  .inincio div h1 {
-    display: flex;
-    text-align: center;
-    justify-content: center; }
+    justify-content: center;
+    max-width: 1rem; }
+    .inincio .logo img {
+      display: flex;
+      justify-content: center; }
+    .inincio .logo h1 {
+      display: flex;
+      text-align: center;
+      justify-content: center; }
   .inincio .container__box .fade-in-image img {
     text-align: center;
     animation: fadeIn 5s;
@@ -90,8 +98,7 @@ body {
   justify-content: center;
   text-align: center;
   border: 3px solid black;
-  background-image: url(/assets/img/DuaLipa.png);
-  opacity: 85%; }
+  background-image: url(/assets/img/LILA.png); }
   .card__noticia h4 {
     text-decoration-color: aliceblue; }
   .card__noticia img {
@@ -105,7 +112,7 @@ body {
   justify-content: center;
   text-align: center;
   border: 3px solid black;
-  background-color: #00721c;
+  background-image: url(/assets/img/GREEN.png);
   opacity: 85%; }
   .card__noticia2 img {
     margin: 3%; }
@@ -118,7 +125,7 @@ body {
   justify-content: center;
   text-align: center;
   border: 3px solid black;
-  background-image: url(/assets/img/ci-yellow.jpg);
+  background-image: url(/assets/img/TURC.png);
   opacity: 85%; }
   .card__noticia3 h4 {
     text-decoration-color: #ce2828; }
@@ -196,9 +203,9 @@ header {
   font-size: medium;
   width: 100vw; }
   .footer-flex img {
-    margin: 5%;
-    width: 5%;
-    height: 5%; }
+    margin: 1rem;
+    width: 5rem;
+    height: 5rem; }
   .footer-flex h6 {
     font-size: 20px; }
 
@@ -212,7 +219,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 63px;
+  height: 50px;
   background-color: black;
   position: fixed;
   width: 100%;
@@ -247,8 +254,6 @@ header {
         text-transform: uppercase;
         font-size: 25px;
         letter-spacing: 0.2rem; }
-        .nav__flex ul li a img {
-          margin: 3%; }
         .nav__flex ul li a:hover {
           color: #ce2828;
           text-decoration: none;

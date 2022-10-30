@@ -5,7 +5,11 @@
     justify-content: center;
     text-align: center;
 
-    div {
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        max-width: 1rem;
         img{
             display: flex;
             justify-content: center;
