@@ -1,12 +1,22 @@
 //* Estilos para la playlist*//
-main{
-    .title-play{
-        display: flex;
+main {
+    .logo-pley {
         flex-direction: column;
-        background-image: url(/assets/img/ci-yellow.jpg);
-        background-repeat:repeat-x;
-        h1{
-            text-align: center;
+        justify-content: center;
+        text-align: center;
+        img {
+            align-items: center;
         }
     }
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+h3{
+    text-align: center;
 }

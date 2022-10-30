@@ -1,26 +1,3 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    nav {
-        ul {
-            display: flex;
-            list-style: none;
-
-            li {
-                margin: 0.5rem;
-                font-weight: bold;
-                font-size: 1.2rem;
-
-                a {
-                    color: ($colores 4);
-                }
-            }
-        }
-    }
-}
-
 //*estilo main*//
 
     .inicio {
@@ -40,12 +17,12 @@ header {
                 align-self: end;
                 font-size: 3rem;
                 text-align: center;
-                    h3 {
-                        grid-area: h3;
-                        text-align: center;
-                        background-color: nth($colores , 5);
-                        opacity: 0.8;
+                margin: 2rem;
+            }
+            h3 {
+                display: block;
+                text-align: center;
+                margin: 2rem;
                     }
-                }
             }
         }

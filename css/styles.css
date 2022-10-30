@@ -30,31 +30,6 @@ body {
     -o-animation: fadeIn 5s;
     -ms-animation: fadeIn 5s; }
 
-/* Gira Argentina */
-.inincio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; }
-  .inincio .logo {
-    display: flex;
-    justify-content: center;
-    max-width: 1rem; }
-    .inincio .logo img {
-      display: flex;
-      justify-content: center; }
-    .inincio .logo h1 {
-      display: flex;
-      text-align: center;
-      justify-content: center; }
-  .inincio .container__box .fade-in-image img {
-    text-align: center;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s; }
-
 /* Imagenes */
 .padre2 {
   /*estilos del header*/ }
@@ -149,27 +124,21 @@ body {
   .card__noticia4:hover {
     transform: scale(1.1); }
 
-main .title-play {
-  display: flex;
+main .logo-pley {
   flex-direction: column;
-  background-image: url(/assets/img/ci-yellow.jpg);
-  background-repeat: repeat-x; }
-  main .title-play h1 {
-    text-align: center; }
+  justify-content: center;
+  text-align: center; }
+  main .logo-pley img {
+    align-items: center; }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  header nav ul {
-    display: flex;
-    list-style: none; }
-    header nav ul li {
-      margin: 0.5rem;
-      font-weight: bold;
-      font-size: 1.2rem; }
-      header nav ul li a {
-        color: radial-gradient(orange, red), radial-gradient(ellipse at top orange, yellow), #ce2828, orange, blue, black, #EDBB99, #00721c, #fffaf2 4; }
+h1 {
+  text-align: center; }
+
+h2 {
+  text-align: center; }
+
+h3 {
+  text-align: center; }
 
 .inicio {
   display: block;
@@ -182,12 +151,13 @@ header {
 .container__box section h2 {
   align-self: end;
   font-size: 3rem;
-  text-align: center; }
-  .container__box section h2 h3 {
-    grid-area: h3;
-    text-align: center;
-    background-color: blue;
-    opacity: 0.8; }
+  text-align: center;
+  margin: 2rem; }
+
+.container__box section h3 {
+  display: block;
+  text-align: center;
+  margin: 2rem; }
 
 .fade-in-image {
   display: flex;
@@ -223,7 +193,7 @@ header {
   background-color: black;
   position: fixed;
   width: 100%;
-  z-index: 100; }
+  z-index: 100%; }
   @media screen and (max-width: 720) {
     .header__flex {
       flex-direction: column;
