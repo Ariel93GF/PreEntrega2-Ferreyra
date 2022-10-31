@@ -10,16 +10,20 @@
     z-index: 100%;
     
 
-    @media screen and (max-width: 720) {
+    @media screen and ($resolucion-small) {
         flex-direction: column;
         justify-content: center;
+    }
+    @media screen and ($resolucion-smaller){
+        display: none;
+        position: fixed;
     }
 }
 
 .nav__flex {
     width: 100vw;
 
-    @media (max-width: 380px) {
+    @media ($resolucion-small) {
         width: auto;
     }
 
@@ -48,9 +52,16 @@
                 letter-spacing: 0.2rem;
 
                 &:hover {
-                    color: nth($colores, 3 );
+                    color: nth($colores, 4 );
                     text-decoration: none;
                     transform: scale(1.1);
+                    background-color: nth($colores , 3 );
+                    padding: 0,3rem;
+                }
+                @media screen and ($resolucion-small) {
+                    color: rgb(255, 255, 255);
+                    font-size: 1.5rem;
+                    font-weight: bold;
                 }
             }
         }

@@ -4,12 +4,21 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    width: auto;
+    @media scren and (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        padding: 1rem;
+        margin: 1rem;
+    }
 
     .logo{
         display: flex;
         justify-content: center;
         max-width: 1rem;
+        width: auto;
         img{
             display: flex;
             justify-content: center;
@@ -24,6 +33,7 @@
         .fade-in-image {
             img{
             text-align: center;
+            width: auto;
             animation: fadeIn 5s;
             -webkit-animation: fadeIn 5s;
             -moz-animation: fadeIn 5s;

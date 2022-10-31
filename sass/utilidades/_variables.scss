@@ -1,9 +1,13 @@
 $fondo-principal: url(../assets/img/día.jpg);
 $posicion-fija: fixed;
 body{
-    background-color: #D6EAF8;
-    /*background-image: $fondo-principal;
+    /*background-color: #D6EAF8;*/
+    background-image: $fondo-principal;
     background-attachment: $posicion-fija;
-    background-size: 100% 100%;*/
-
+    background-size: 100% 100%;
 }
+$resolucion-smaller: 560px;
+$resolucion-small: 768px;
+$resolucion-medium: 920px;
+$resolucion-large: 1200px;
+$resolucion-larger: 2800px;
