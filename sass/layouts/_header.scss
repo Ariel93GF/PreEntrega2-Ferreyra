@@ -10,11 +10,11 @@
     z-index: 100%;
     
 
-    @media screen and ($resolucion-small) {
+    @media screen and (max-width: $resolucion-small) {
         flex-direction: column;
         justify-content: center;
     }
-    @media screen and ($resolucion-smaller){
+    @media screen and (max-width:$resolucion-smaller){
         display: none;
         position: fixed;
     }
@@ -23,7 +23,7 @@
 .nav__flex {
     width: 100vw;
 
-    @media ($resolucion-small) {
+    @media (margin:$resolucion-small) {
         width: auto;
     }
 
@@ -52,13 +52,12 @@
                 letter-spacing: 0.2rem;
 
                 &:hover {
-                    color: nth($colores, 4 );
+                    color: nth($colores, 3 );
                     text-decoration: none;
                     transform: scale(1.1);
-                    background-color: nth($colores , 3 );
                     padding: 0,3rem;
                 }
-                @media screen and ($resolucion-small) {
+                @media screen and (margin: $resolucion-small) {
                     color: rgb(255, 255, 255);
                     font-size: 1.5rem;
                     font-weight: bold;
