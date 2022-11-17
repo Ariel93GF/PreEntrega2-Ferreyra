@@ -13,7 +13,7 @@ body {
   justify-content: center;
   text-align: center;
   width: auto; }
-  @media scren and (max-width: 480px) {
+  @media scren and (max-width: 560px) {
     .inincio {
       display: flex;
       justify-content: center;
@@ -33,6 +33,13 @@ body {
       display: flex;
       text-align: center;
       justify-content: center; }
+    @media scren and (max-width: 560px) {
+      .inincio .logo {
+        display: flex;
+        flex-direction: column;
+        text-align: flex-end;
+        width: 30%;
+        text-decoration-color: brown; } }
   .inincio .container__box .fade-in-image img {
     text-align: center;
     width: auto;

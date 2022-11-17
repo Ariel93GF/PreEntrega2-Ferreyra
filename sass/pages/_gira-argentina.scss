@@ -5,7 +5,7 @@
     justify-content: center;
     text-align: center;
     width: auto;
-    @media scren and (max-width: 480px) {
+    @media scren and (max-width: $resolucion-smaller) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,6 +27,13 @@
             display: flex;
             text-align: center;
             justify-content: center;
+        }
+        @media scren and (max-width: $resolucion-smaller){
+            display: flex;
+            flex-direction: column;
+            text-align: flex-end;;
+            width: 30%;
+            text-decoration-color: brown;;
         }
     }
     .container__box {
